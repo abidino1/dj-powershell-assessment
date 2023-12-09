@@ -1,3 +1,5 @@
+# This code reads a choice of input (1 or 2) then input the string typed or execute a command. if choice is not 1 or 2 it will exit
+
 # PowerShell script
 
 # Function to get user input and print "You entered input"
@@ -27,7 +29,7 @@ function GetUserInput {
  elseif ($choice -eq '2') {
     ExecuteCommand
  }
- # If the user inputs something different from 1 or 2, it will output "Invalid choise. EXecuting."
+ # If the user inputs something different from 1 or 2, it will output "Invalid choice. Exiting."
  else {
     Write-Host "Invalid choice. Exiting."
  }
